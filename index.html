@@ -1,2 +1,52 @@
-<!-- ini html -->
-<!-- tes2 -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas & Keliling Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Welcome To Katik!</h1>
+            <p>Hai sobat selamat datang di Katik! <br> sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga.</p>
+        </nav>
+    </header>
+    <main>
+        <div id="form-container">
+            <!-- Form Luas Segitiga -->
+            <form id="form-luas">
+                <h2>Hitung Luas Segitiga</h2>
+                <label for="alas">Alas (a):</label>
+                <input type="number" id="alas" name="alas" required>
+                
+                <label for="tinggi">Tinggi (t):</label>
+                <input type="number" id="tinggi" name="tinggi" required>
+                
+                <button type="button" id="hitung-luas">Hitung Luas</button>
+            </form>
+
+            <!-- Form Keliling Segitiga -->
+            <form id="form-keliling">
+                <h2>Hitung Keliling Segitiga</h2>
+                <label for="sisiA">Sisi A:</label>
+                <input type="number" id="sisiA" name="sisiA" required>
+                
+                <label for="sisiB">Sisi B:</label>
+                <input type="number" id="sisiB" name="sisiB" required>
+                
+                <label for="sisiC">Sisi C:</label>
+                <input type="number" id="sisiC" name="sisiC" required>
+                
+                <button type="button" id="hitung-keliling">Hitung Keliling</button>
+            </form>
+        </div>
+        <div id="hasil">
+            <p id="luas"></p>
+            <p id="keliling"></p>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
